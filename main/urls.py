@@ -11,4 +11,8 @@ urlpatterns = [
 	path('portfolio/<slug:slug>', views.PortfolioDetailView.as_view(), name="portfolio"),
 	path('blog/', views.BlogView.as_view(), name="blogs"),
 	path('blog/<slug:slug>', views.BlogDetailView.as_view(), name="blog"),
+    # path('', views.home, name='home'),
+    path('blog/', views.education, name='education'),
+    path('portfolio/', views.projects, name='projects'),
+    # path('contact/', views.contact, name='contact'),
 	]

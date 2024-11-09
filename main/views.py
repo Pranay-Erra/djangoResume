@@ -68,3 +68,10 @@ class BlogView(generic.ListView):
 class BlogDetailView(generic.DetailView):
 	model = Blog
 	template_name = "main/blog-detail.html"
+
+
+def education(request):
+    return render(request, 'main/education.html')
+
+def projects(request):
+    return render(request, 'main/projects.html')
