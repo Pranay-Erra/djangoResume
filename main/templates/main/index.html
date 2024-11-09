@@ -65,44 +65,158 @@ Start Content
   <div class="sectionSpace pt-0">
     <div class="container">
       <div class="row">
-        <div class="col-md-auto">
-          <div class="keySkillCol">
-            <h4 class="smTitle pb-3">Key Skills</h4>
-            {% for sk in me.userprofile.skills.all %}
-            {% if sk.is_key_skill %}
-            <div class="keySkillCard">
-              {% if sk.image %}
-              <div class="ksIconCol">
-                <img src="{{sk.image.url}}" alt="...">
-              </div>
-              {% endif %}
-              <span class="ksText">{{sk.name}}</span>
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
-        </div>
         <div class="col-md">
           <h4 class="smTitle pb-3">Coding Skills</h4>
           <div class="progressCol">
             <div class="progressCard">
-              {% for sk in me.userprofile.skills.all %}
-              {% if sk.is_key_skill %}
               <div class="progressCol">
-                <span class="progressLbl">{{sk.name}}</span>
+                <span class="progressLbl">Python</span>
                 <div class="row g-2 align-items-center">
                   <div class="col">
                     <div class="progress progressStyle">
-                      <div class="progress-bar" role="progressbar" style="width: {{sk.score}}%" aria-valuenow="{{sk.score}}" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                   <div class="col-auto">
-                    <span class="pLbl">{{sk.score}}%</span>
+                    <span class="pLbl">80%</span>
                   </div>
                 </div>
               </div>
-              {% endif %}
-              {% endfor %}
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">C</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">75%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">Java</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">HTML</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">CSS</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">JavaScript</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">React.js</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">70%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">SQL</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">MongoDB</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="progressCard">
+              <div class="progressCol">
+                <span class="progressLbl">AWS</span>
+                <div class="row g-2 align-items-center">
+                  <div class="col">
+                    <div class="progress progressStyle">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <span class="pLbl">70%</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -191,7 +305,8 @@ Start Content
     </div>
   </div>
 </section>
-{% endblock %}
+
 <!-- ================================
-End Content
+END Content
 ================================= -->
+{% endblock %}
