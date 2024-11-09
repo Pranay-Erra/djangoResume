@@ -4,9 +4,9 @@
 <!-- ================================
 Start SEO blocks
 ================================= -->
-{% block title %}{% endblock %}
-{% block decription %}{% endblock %}
-{% block keywords %}{% endblock %}
+{% block title %}Education{% endblock %}
+{% block description %}Overview of my educational qualifications.{% endblock %}
+{% block keywords %}Education, Qualifications{% endblock %}
 <!-- ================================
 END SEO blocks
 ================================= -->
@@ -34,10 +34,10 @@ Start Content
 <section>
   <div class="innerPageBannerCol">
     <div class="container">
-      <div class="row g-4 g-md-3  align-items-center">
+      <div class="row g-4 g-md-3 align-items-center">
         <div class="col-md-6">
           <div class="bannerContent">
-            <h1 class="xlTitle pb-md-3">See my recent blogs below</h1>
+            <h1 class="xlTitle pb-md-3">My Education</h1>
           </div>
         </div>
       </div>
@@ -48,18 +48,29 @@ Start Content
 <section>
   <div class="lightBg">
     <div class="container">
-      <div class="portfolioContentMain">
-        <div class="row g-3 g-md-4 g-lg-5 portfolioRow">
-          {% for obj in object_list %}
-          <div class="col-md-6 pColMain">
-            <div class="pCol">
-              <a href="{% url 'main:blog' slug=obj.slug %}" >
-              <img src="{{obj.image.url}}" alt="..." class="pImg">
-              </a>
+      <div class="educationContentMain">
+        <div class="row g-3 g-md-4 g-lg-5 educationRow">
+          <div class="col-md-6 educationColMain">
+            <div class="educationCol">
+              <h2>Bachelor of Technology</h2>
+              <p>SRKR Engineering College | Information Technology</p>
+              <p>Expected in 2025 - Current CGPA: 8.80</p>
             </div>
           </div>
-          {% endfor %}
-
+          <div class="col-md-6 educationColMain">
+            <div class="educationCol">
+              <h2>Intermediate (MPC)</h2>
+              <p>Sri Chaitanya Junior College</p>
+              <p>2021 - 963 marks</p>
+            </div>
+          </div>
+          <div class="col-md-6 educationColMain">
+            <div class="educationCol">
+              <h2>SSC (10th Class)</h2>
+              <p>Sri Harshita E.M High School</p>
+              <p>2019 - 10 CGPA</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,5 +79,4 @@ Start Content
 <!-- ================================
 End Content
 ================================= -->
-{%endblock%} 
-    
+{% endblock %}

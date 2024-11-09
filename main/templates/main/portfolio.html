@@ -4,9 +4,9 @@
 <!-- ================================
 Start SEO blocks
 ================================= -->
-{% block title %}{% endblock %}
-{% block decription %}{% endblock %}
-{% block keywords %}{% endblock %}
+{% block title %}Projects{% endblock %}
+{% block description %}A showcase of my recent projects and technical skills.{% endblock %}
+{% block keywords %}Projects, Portfolio, AWS, React, Disaster Recovery{% endblock %}
 <!-- ================================
 END SEO blocks
 ================================= -->
@@ -34,11 +34,10 @@ Start Content
 <section>
   <div class="innerPageBannerCol">
     <div class="container">
-      <div class="row g-4 g-md-3  align-items-center">
+      <div class="row g-4 g-md-3 align-items-center">
         <div class="col-md-6">
           <div class="bannerContent">
             <h1 class="xlTitle pb-md-3">See my recent projects below</h1>
-            
           </div>
         </div>
       </div>
@@ -50,17 +49,26 @@ Start Content
   <div class="lightBg">
     <div class="container">
       <div class="portfolioContentMain">
-        <div class="row g-3 g-md-4 g-lg-5 portfolioRow">
-          {% for obj in object_list %}
+        <div class="row g-3 g-md-4 g-lg-5 portfolioRow d-flex justify-content-between">
+          <!-- Project 1 -->
           <div class="col-md-6 pColMain">
             <div class="pCol">
-              <a href="{% url 'main:portfolio' slug=obj.slug %}" >
-              <img src="{{obj.image.url}}" alt="..." class="pImg">
-              </a>
+              <h2>Personal Portfolio Website</h2>
+              <p>Developed a responsive portfolio using HTML, CSS, JavaScript, Python, and React.js to showcase skills.</p>
+              <p><strong>Technologies Used:</strong> Python, C, Java, HTML, CSS, JavaScript, React.js, SQL, MongoDB, AWS</p>
+              <p><strong>Additional Skills:</strong> Communication, Problem-Solving, Team Collaboration, Analytical Skills</p>
             </div>
           </div>
-          {% endfor %}
-          
+      
+          <!-- Project 2 -->
+          <div class="col-md-6 pColMain">
+            <div class="pCol">
+              <h2>Disaster Recovery Using AWS Services</h2>
+              <p>Utilized AWS services (EC2, S3 Buckets, VPC) for disaster management and recovery.</p>
+              <p>Implemented secure data recovery by managing EC2 instances, configuring S3 Buckets for storage, and establishing VPC connections for secure access.</p>
+              <p><strong>Technologies Used:</strong> AWS (EC2, S3, VPC)</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -69,4 +77,4 @@ Start Content
 <!-- ================================
 End Content
 ================================= -->
-{% endblock%}    
+{% endblock %}
