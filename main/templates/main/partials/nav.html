@@ -6,9 +6,15 @@ Start Navigation Bar
     <div class="headerCol">
     <div class="container-fluid">
         <div class="row align-items-center">
-        <div class="col-auto">
-            <div class="logoCol"><a href="{% url 'main:home' %}"><img src="{% static 'images/logo.png' %}" alt="..."></a></div>
-        </div>
+            <div class="col-auto">
+                <div class="col-auto">
+                    <div class="logoCol">
+                        <a href="{% url 'main:home' %}">
+                            <img src="{% static 'images/logo_p.jpg' %}" alt="..." style="width: 50px; height: 50px; border-radius: 50%;">
+                        </a>
+                    </div>
+                </div>                
+            </div>            
         <div class="col">
             <div class="d-md-none">
             <button class="navToggle">
